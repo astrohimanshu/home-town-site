@@ -1,0 +1,112 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    background:linear-gradient(#a87302, rgba(255, 252, 99, 0.815));
+}
+#hero-section{
+    background-image: url("images/New-delhi.jpg");
+    background-size: cover;
+    padding-bottom: 150px;
+    width: 100%;
+    color: rgb(245, 179, 179);
+    text-shadow: 0px 0px 5px red;
+}
+#hero-text
+{   margin:0px auto; 
+    width: 500px; 
+    color: whitesmoke;
+    text-shadow: 0px 0px 3px black;
+}
+.activity-section{
+    display: inline;
+    text-shadow: 0px 0px 3px blanchedalmond;
+}
+.activity-wrapper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.activity{
+    display: flex;
+    flex-direction: column;
+    
+}
+.guide{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: whitesmoke;
+    border-radius: 20px; 
+    border-bottom: 10px solid blue;
+    
+}
+#guide-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+/*img {
+    width: 100px;
+    border-radius: 50%;
+}*/
+#guide-avatar{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#guide-avatar:hover{ 
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 10px yellowgreen;
+    
+}
+.activity-img{
+    width: 100px;
+    height: 100px;
+  --color: #457B9D; /* the color of the border */
+  --border: 5px;   /* the thickness of the border */
+  --offset: 20px;   /* control the movement of the border */
+  --gap: 5px;       /* the gap on hover */
+  
+  border-radius: 50%;
+  cursor: pointer;
+  padding: calc(var(--border) + var(--gap));
+  border: var(--offset) solid #0000;
+  --_m: radial-gradient(50% 50%, #000 calc(100% - var(--offset)),#0000 calc(100% - var(--border)));
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  --_g: #0000 calc(99% - var(--border)), var(--color) calc(100% - var(--border)) 99%,#0000;
+  --_s: var(--offset);
+  --_r: 100% 100% at;
+  background:
+    radial-gradient(var(--_r) 0    0   ,var(--_g)) calc(100% + var(--_s)) calc(100% + var(--_s)),
+    radial-gradient(var(--_r) 100% 0   ,var(--_g)) calc(0%   - var(--_s)) calc(100% + var(--_s)),
+    radial-gradient(var(--_r) 0    100%,var(--_g)) calc(100% + var(--_s)) calc(0%   - var(--_s)),
+    radial-gradient(var(--_r) 100% 100%,var(--_g)) calc(0%   - var(--_s)) calc(0%   - var(--_s));
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  transition: .4s;
+}
+img:hover {
+  --_s: 0px
+}
